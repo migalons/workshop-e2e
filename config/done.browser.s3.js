@@ -9,7 +9,7 @@ exports.config = config;
 
 config.environment = 'web';
 config.server = 'selenium';
-config.baseUrl = 'https://bbva-files.s3.amazonaws.com/cells/tests/apps/mobilebanking.es/develop';
+config.baseUrl = '';
 
 config.capabilities = [
   {
