@@ -2,10 +2,19 @@
 
 var World = function World() {
 
+  this.getUser = function getUser() {
+    return this.user;
+  };
+
+  this.setUser = function setUser(user) {
+    this.user = user;
+  };
+
   //settimeout
   browser.timeoutsImplicitWait(30000)
 
 };
+
 
 var screenshot = {
 

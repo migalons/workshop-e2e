@@ -1,4 +1,7 @@
 'use strict';
+
+var poWorld = require('../support/world')
+
 var view = {
   css: {
     header:'#login > buzz-ui-organism-process-view > div > header',
@@ -18,6 +21,16 @@ var actions = {
       .waitForVisible(view.css.userIdInput)
       .waitForVisible(view.css.passwordInput)
       .waitForVisible(view.css.accessButton)
+  },
+
+  credentials: function() {
+    return browser
+        .waitForVisible(view.css.userIdInput)
+        .setValue(view.css.userIdInput, poWorld.user.id)
+        .waitForVisible(view.css.passwordInput)
+        .setValue(view.css.passwordInput, poWorld.user.password)
+        .waitForVisible(view.css.accessButton)
+        .click(view.css.accessButton)
   }
 
 };
