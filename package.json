@@ -1,0 +1,25 @@
+{
+  "name": "workshop.e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migalons/workshop-e2e.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/migalons/workshop-e2e/issues"
+  },
+  "homepage": "https://github.com/migalons/workshop-e2e#readme",
+  "dependencies": {
+    "lodash": "^4.12.0"
+  }
+}
